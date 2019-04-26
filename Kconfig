@@ -1,23 +1,23 @@
-menu "nkolban's c++ wrappers"
+menu "nkolban's C++ wrappers"
 
-menuconfig NKOLBAN
-    bool "nkolban's c++ wrappers"
+config NKOLBAN
+    bool "nkolban's C++ wrappers"
     default y
     help
-        Select this option to use nkolban's c++ wrappers.
+        Select this option to use nkolban's C++ wrappers.
 
-menuconfig NKOLBAN_BLE
-    bool "bluetooth wrappers"
+config NKOLBAN_BLE
+    bool "Bluetooth wrappers"
     depends on BT_ENABLED && NKOLBAN
     default y
     help
-        Select this option to use nkolban's c++ bluetooth ble wrappers.
+        Select this option to use nkolban's C++ Bluetooth BLE wrappers.
 
-menuconfig NKOLBAN_BLE2902
+config NKOLBAN_BLE2902
     bool "BLE2902"
     depends on NKOLBAN_BLE
     default y
     help
-        Select this option to use nkolban's c++ bluetooth BLE2902 wrappers.
+        Select this option to use nkolban's C++ Bluetooth BLE2902 wrappers.
 
 endmenu
